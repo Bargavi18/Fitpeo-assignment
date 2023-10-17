@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+ 
+    
+</head>
+<body>
+    <div class="container">
+           
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="#">
+                    <i class="fa-brands fa-algolia"></i>
+                    <h2>Dashboard </h2></a>
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-globe"></i>
+                    <div>Dashboard </div></a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-dice-d6"></i>
+                    <div>Product</div></a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-user"></i>
+                    <div>Customer</div></a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-wallet"></i>
+                    <div>Income</div></a>
+                    
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-certificate"></i>
+                    <span>Promote</span></a>
+                   
+                </li>
+                <li>
+                    <a href="#">
+                    <i class="fa-solid fa-question"></i>
+                    <div>help</div></a>
+                    
+                </li>
+            </ul>
+            <ul >
+                <li>
+                    <a href="#">  
+                        <div class="Manager" > 
+                        <i class="fa-regular fa-user"></i> 
+                            Evano
+                        <span class="project" >project manager </span>  
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="top">
+                <div class="Hello">
+                    <span>Hello Shahrukh</span>
+                    <i class="fa-regular fa-hand">,</i>
+                </div>
+                <div class="search">
+                    <input type="search"  id="search" placeholder="search">
+                    <label for="search"><i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i></label>
+                </div>
+            </div>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">  
+                        <div class="con-dollar">
+                        <h6 class="card-name">Earning</h6>
+                        <h3 class="number"><b>$198k</b></h3>
+                        <h6 class="add"><span style="color: rgb(39, 172, 39);">↑37.8%</span>this month</h6></div>
+                        <img src="dollar.png" width="80px" height="80px">
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="card-content">  
+
+                        <div class="con-notepad">
+                        <h6 class="card-name">Orders</h6>
+                        <h3 class="number"><b>$2.4k</b></h3>
+                        <h6 class="add"><span style="color:red;">↓2%</span>this month</h6></div>
+                        <img src="notepad.png"width="60px" height="60px">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">  
+                        <div class="con-wallet">
+                        <h6 class="card-name">Balance</h6>
+                        <h3 class="number"><b>$2.4k</b></h3>
+                        <h6 class="add"><span style="color:red;">↓2%</span>this month</h6></div>
+                        <img src="wallet.png"width="60px" height="60px">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">  
+                        <div class="con-lock">    
+                        <h6 class="card-name">Total Sales</h6>
+                        <h3 class="number"><b>$89k</b></h3>
+                        <h6 class="add"><span style="color: rgb(39, 172, 39);">↑11%</span>this month</h6></div>
+                        <img src="lock-button.png"width="60px" height="60px">
+                    </div>
+                </div>
+            </div>
+            <div class="charts">
+                <div class="chart">
+                    <span class="Overview"><b>Overview</b></span><br>
+                    <span class="month">Monthly Earning</span>
+                    <select class="drop">
+                        <option value="Quarterly" selected>Quarterly</option>
+                        <option value="halfly" >Halfly</option>
+                        <option value="Annual" >Annual</option>
+                    </select>  
+                    <canvas id="barchart" width="28" height="8"></canvas>       
+                </div>
+                <div class="chart" id="doughnut">
+                    <span>Customers</span><br>
+                    <span style="color:rgba(0, 0, 0, 0.225);">Customers that buy products</span>
+                    <div class="programming-stats">
+                        <div class="chart-container">
+                          <canvas class="my-chart"></canvas>
+                        </div>
+                        <div class="details">      
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="product">
+                    <span ><b>Product Sell</b></span><br>
+                    <div class="searchdown">
+                        <input type="search"  id="search" placeholder="search">
+                        
+                    </div>
+                    <select class="dropdown">
+                    <option value="Last 30 days" selected>Last 30 days</option>
+                    </select>
+                </div>  
+                <div class="table">
+                    <table style="width:100%">
+                        <tr class="heading">
+                            <div class="hproduct">
+                                <th class="head">Product Name</th></div>
+                            <div class="hstock">
+                                <th class="head">Stock</th>
+                                <th class="head">Price</th>
+                                <th class="head">Total Sales</th>
+                            </div>
+                        </tr>
+                        <tr></tr>
+                            <td>Abstract 3D<br><p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>     
+                            <td>32 in stock</td>
+                            <td>$45.99</td>
+                            <td>20</td> 
+                        </tr>
+                        <tr>
+                            <td>Sarphens illustration<br><p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p></td>
+                            <td>32 in stock</td>
+                            <td>$45.99</td>
+                            <td>20</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>                  
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="chart1.js"></script>
+    <script src="chart2.js"></script>
+    
+</body>
+</html>
