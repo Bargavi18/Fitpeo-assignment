@@ -257,6 +257,10 @@
         left:60px;
         width:calc(100%-60px);
     }
+    .table{
+        left:60px;
+        width:calc(100%-60px);
+    }
 }
 @media (max-wisth:880px){
     .cards{
@@ -274,6 +278,9 @@
 }
 @media (max-width:500px){
     .cards{
+        grid-template-columns: 1fr;
+    }
+    .charts{
         grid-template-columns: 1fr;
     }
     .logo h2{
